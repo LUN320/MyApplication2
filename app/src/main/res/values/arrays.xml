@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_type">
+        <item></item>
+        <item>创建群聊</item>
+        <item>加好友/群</item>
+        <item>匹配聊天</item>
+        <item>一起派队</item>
+        <item>扫一扫</item>
+    </string-array>
+</resources>

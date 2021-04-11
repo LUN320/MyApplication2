@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".kehu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="353dp"
+            android:layout_height="45dp"
+            android:background="#3E96DF"
+            android:gravity="center"
+            android:text="我的客户"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <Spinner
+            android:background="#3E96DF"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/spin"
+            android:entries="@array/list_type"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+        <ListView
+            android:id="@+id/listv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="我的商城"
+            android:id="@+id/zuo"
+            android:onClick="zjm2"/>
+        <Button
+            android:layout_toRightOf="@+id/zuo"
+            android:layout_alignParentBottom="true"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="我的客户"/>
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:onClick="user2"
+            android:text="用户中心"/>
+    </RelativeLayout>
+</LinearLayout>
